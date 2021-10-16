@@ -30,7 +30,7 @@ const pizzaController = {
 
     // createPizza POST /api/pizzas
     createPizza({ body }, res) {
-        Pizza.creeate(body)
+        Pizza.create(body)
             .then(dbPizzaData => res.json(dbPizzaData))
             .catch(err => res.status(400).json(err));
     },
